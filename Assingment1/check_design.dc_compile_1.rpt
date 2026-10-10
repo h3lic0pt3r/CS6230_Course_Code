@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sat Sep 19 04:55:45 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Unconnected ports (LINT-28)                                     4
+--------------------------------------------------------------------------------
+
+Warning: In design 'FIFO2_00000040_1', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO2_00000024_1', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFOL1_00000042', port 'CLR' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFOL1_0000002f', port 'CLR' is not connected to any nets. (LINT-28)
+1

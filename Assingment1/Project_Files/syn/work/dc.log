@@ -1,0 +1,5 @@
+Unable to obtain feature 'Design-Vision ' because:
+Error: Cannot open key file '/home/tools/pd_tools/syn/U-2022.12/admin/license/key' or a licensing environment parameter has not been set correctly. (SEC-2)
+Unable to obtain feature 'Design-Analyzer ' because:
+Error: Cannot open key file '/home/tools/pd_tools/syn/U-2022.12/admin/license/key' or a licensing environment parameter has not been set correctly. (SEC-2)
+Fatal: At least one of the following must be enabled : Design-Vision, Design-Analyzer. (DCSH-10)

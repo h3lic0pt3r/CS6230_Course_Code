@@ -1,0 +1,1057 @@
+Warning: Design 'mkDUT' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group i2f
+        -max_paths 20
+        -transition_time
+        -capacitance
+Design : mkDUT
+Version: U-2022.12
+Date   : Sat Sep 19 01:17:44 2026
+****************************************
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_30_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U181/A1 (SAEDRVT14_ND2_MM_16)                     0.00      0.00       0.15 r
+  adder_ff_output/U181/X (SAEDRVT14_ND2_MM_16)                      0.02      0.01       0.16 f
+  adder_ff_output/n177 (net)                    3         0.03                0.00       0.16 f
+  adder_ff_output/U215/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.16 f
+  adder_ff_output/U215/X (SAEDRVT14_INV_S_20)                       0.01      0.02       0.18 r
+  adder_ff_output/n109 (net)                    3         0.04                0.00       0.18 r
+  adder_ff_output/U167/A (SAEDRVT14_INV_S_20)                       0.01      0.00       0.18 r
+  adder_ff_output/U167/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.20 f
+  adder_ff_output/n46 (net)                     7         0.07                0.00       0.20 f
+  adder_ff_output/U190/A1 (SAEDRVT14_NR2_MM_10)                     0.02      0.00       0.20 f
+  adder_ff_output/U190/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.21 r
+  adder_ff_output/n194 (net)                    1         0.01                0.00       0.21 r
+  adder_ff_output/U267/B (SAEDRVT14_AOI21_8)                        0.01      0.00       0.22 r
+  adder_ff_output/U267/X (SAEDRVT14_AOI21_8)                        0.05      0.02       0.23 f
+  adder_ff_output/n195 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U268/B (SAEDRVT14_OAI21_V1_8)                     0.05      0.00       0.23 f
+  adder_ff_output/U268/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N24 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_30_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_30_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_25_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U163/A1 (SAEDRVT14_ND2_MM_16)                     0.00      0.00       0.15 r
+  adder_ff_output/U163/X (SAEDRVT14_ND2_MM_16)                      0.01      0.01       0.16 f
+  adder_ff_output/n62 (net)                     2         0.02                0.00       0.16 f
+  adder_ff_output/U179/A2 (SAEDRVT14_ND2_16)                        0.01      0.00       0.16 f
+  adder_ff_output/U179/X (SAEDRVT14_ND2_16)                         0.01      0.01       0.17 r
+  adder_ff_output/n67 (net)                     1         0.01                0.00       0.17 r
+  adder_ff_output/U213/A (SAEDRVT14_INV_S_20)                       0.01      0.00       0.17 r
+  adder_ff_output/U213/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.19 f
+  adder_ff_output/n124 (net)                    4         0.06                0.00       0.19 f
+  adder_ff_output/U228/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.19 f
+  adder_ff_output/U228/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.21 r
+  adder_ff_output/n258 (net)                    6         0.06                0.00       0.21 r
+  adder_ff_output/U44/A1 (SAEDRVT14_AOI21_6)                        0.02      0.00       0.21 r
+  adder_ff_output/U44/X (SAEDRVT14_AOI21_6)                         0.03      0.02       0.23 f
+  adder_ff_output/n274 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U199/B (SAEDRVT14_OAI21_V1_8)                     0.03      0.00       0.24 f
+  adder_ff_output/U199/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N29 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_25_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_25_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_8_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U161/A (SAEDRVT14_INV_12)                         0.01      0.00       0.18 f
+  adder_ff_output/U161/X (SAEDRVT14_INV_12)                         0.01      0.02       0.19 r
+  adder_ff_output/n113 (net)                    3         0.03                0.00       0.19 r
+  adder_ff_output/U116/A (SAEDRVT14_INV_6)                          0.01      0.00       0.19 r
+  adder_ff_output/U116/X (SAEDRVT14_INV_6)                          0.05      0.04       0.23 f
+  adder_ff_output/n280 (net)                    6         0.06                0.00       0.23 f
+  adder_ff_output/U292/A1 (SAEDRVT14_OAI21_V1_8)                    0.05      0.00       0.23 f
+  adder_ff_output/U292/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N46 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_8_/D (SAEDRVT14_FDP_V2_1)           0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_8_/CK (SAEDRVT14_FDP_V2_1)                    0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_24_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U161/A (SAEDRVT14_INV_12)                         0.01      0.00       0.18 f
+  adder_ff_output/U161/X (SAEDRVT14_INV_12)                         0.01      0.02       0.19 r
+  adder_ff_output/n113 (net)                    3         0.03                0.00       0.19 r
+  adder_ff_output/U116/A (SAEDRVT14_INV_6)                          0.01      0.00       0.19 r
+  adder_ff_output/U116/X (SAEDRVT14_INV_6)                          0.05      0.04       0.23 f
+  adder_ff_output/n280 (net)                    6         0.06                0.00       0.23 f
+  adder_ff_output/U298/A1 (SAEDRVT14_OAI21_V1_8)                    0.05      0.00       0.23 f
+  adder_ff_output/U298/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N30 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_24_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_24_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U161/A (SAEDRVT14_INV_12)                         0.01      0.00       0.18 f
+  adder_ff_output/U161/X (SAEDRVT14_INV_12)                         0.01      0.02       0.19 r
+  adder_ff_output/n113 (net)                    3         0.03                0.00       0.19 r
+  adder_ff_output/U116/A (SAEDRVT14_INV_6)                          0.01      0.00       0.19 r
+  adder_ff_output/U116/X (SAEDRVT14_INV_6)                          0.05      0.04       0.23 f
+  adder_ff_output/n280 (net)                    6         0.06                0.00       0.23 f
+  adder_ff_output/U225/A1 (SAEDRVT14_OAI21_V1_8)                    0.05      0.00       0.23 f
+  adder_ff_output/U225/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N44 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_10_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_10_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_23_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U161/A (SAEDRVT14_INV_12)                         0.01      0.00       0.18 f
+  adder_ff_output/U161/X (SAEDRVT14_INV_12)                         0.01      0.02       0.19 r
+  adder_ff_output/n113 (net)                    3         0.03                0.00       0.19 r
+  adder_ff_output/U116/A (SAEDRVT14_INV_6)                          0.01      0.00       0.19 r
+  adder_ff_output/U116/X (SAEDRVT14_INV_6)                          0.05      0.04       0.23 f
+  adder_ff_output/n280 (net)                    6         0.06                0.00       0.23 f
+  adder_ff_output/U200/A1 (SAEDRVT14_OAI21_V1_8)                    0.05      0.00       0.23 f
+  adder_ff_output/U200/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N31 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_23_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_23_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_ma_put_operands
+              (input port clocked by CLK)
+  Endpoint: adder_ff_input/data0_reg_reg_61_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_ma_put_operands (in)                                           0.00      0.00       0.15 r
+  EN_ma_put_operands (net)                      6         0.07                0.00       0.15 r
+  adder_ff_input/ENQ (FIFO2_00000040_1)                                       0.00       0.15 r
+  adder_ff_input/ENQ (net)                                0.07                0.00       0.15 r
+  adder_ff_input/U90/A1 (SAEDRVT14_ND2_16)                          0.00      0.00       0.15 r
+  adder_ff_input/U90/X (SAEDRVT14_ND2_16)                           0.02      0.01       0.16 f
+  adder_ff_input/n180 (net)                     2         0.03                0.00       0.16 f
+  adder_ff_input/U89/A (SAEDRVT14_INV_12)                           0.02      0.00       0.16 f
+  adder_ff_input/U89/X (SAEDRVT14_INV_12)                           0.02      0.02       0.18 r
+  adder_ff_input/n84 (net)                      5         0.04                0.00       0.18 r
+  adder_ff_input/U145/A (SAEDRVT14_BUF_12)                          0.02      0.00       0.19 r
+  adder_ff_input/U145/X (SAEDRVT14_BUF_12)                          0.02      0.04       0.22 r
+  adder_ff_input/n92 (net)                      6         0.05                0.00       0.22 r
+  adder_ff_input/U180/A1 (SAEDRVT14_AOI21_8)                        0.02      0.00       0.22 r
+  adder_ff_input/U180/X (SAEDRVT14_AOI21_8)                         0.02      0.02       0.24 f
+  adder_ff_input/n131 (net)                     1         0.01                0.00       0.24 f
+  adder_ff_input/U177/A1 (SAEDRVT14_ND2_CDC_4)                      0.02      0.00       0.24 f
+  adder_ff_input/U177/X (SAEDRVT14_ND2_CDC_4)                       0.01      0.01       0.26 r
+  adder_ff_input/N21 (net)                      1         0.00                0.00       0.26 r
+  adder_ff_input/data0_reg_reg_61_/D (SAEDRVT14_FDP_V2_4)           0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_input/data0_reg_reg_61_/CK (SAEDRVT14_FDP_V2_4)                    0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_ma_put_operands
+              (input port clocked by CLK)
+  Endpoint: adder_ff_input/data1_reg_reg_49_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_ma_put_operands (in)                                           0.00      0.00       0.15 f
+  EN_ma_put_operands (net)                      6         0.07                0.00       0.15 f
+  adder_ff_input/ENQ (FIFO2_00000040_1)                                       0.00       0.15 f
+  adder_ff_input/ENQ (net)                                0.07                0.00       0.15 f
+  adder_ff_input/U214/A1 (SAEDRVT14_ND2_MM_16)                      0.00      0.00       0.15 f
+  adder_ff_input/U214/X (SAEDRVT14_ND2_MM_16)                       0.02      0.01       0.16 r
+  adder_ff_input/n167 (net)                     2         0.03                0.00       0.16 r
+  adder_ff_input/U148/A (SAEDRVT14_INV_S_20)                        0.02      0.00       0.16 r
+  adder_ff_input/U148/X (SAEDRVT14_INV_S_20)                        0.02      0.02       0.18 f
+  adder_ff_input/n95 (net)                      5         0.08                0.00       0.18 f
+  adder_ff_input/U130/A (SAEDRVT14_INV_S_16)                        0.02      0.00       0.19 f
+  adder_ff_input/U130/X (SAEDRVT14_INV_S_16)                        0.01      0.01       0.20 r
+  adder_ff_input/n98 (net)                      3         0.02                0.00       0.20 r
+  adder_ff_input/U129/A (SAEDRVT14_BUF_12)                          0.01      0.00       0.20 r
+  adder_ff_input/U129/X (SAEDRVT14_BUF_12)                          0.01      0.02       0.22 r
+  adder_ff_input/n72 (net)                      3         0.03                0.00       0.22 r
+  adder_ff_input/U62/A2 (SAEDRVT14_ND2_5)                           0.01      0.00       0.22 r
+  adder_ff_input/U62/X (SAEDRVT14_ND2_5)                            0.02      0.02       0.24 f
+  adder_ff_input/n297 (net)                     1         0.01                0.00       0.24 f
+  adder_ff_input/U362/B (SAEDRVT14_OAI21_V1_8)                      0.02      0.00       0.24 f
+  adder_ff_input/U362/X (SAEDRVT14_OAI21_V1_8)                      0.01      0.02       0.26 r
+  adder_ff_input/n50 (net)                      1         0.00                0.00       0.26 r
+  adder_ff_input/data1_reg_reg_49_/D (SAEDRVT14_FDP_V2_1)           0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_input/data1_reg_reg_49_/CK (SAEDRVT14_FDP_V2_1)                    0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_18_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U165/A1 (SAEDRVT14_AN2_MM_20)                     0.00      0.00       0.15 r
+  adder_ff_output/U165/X (SAEDRVT14_AN2_MM_20)                      0.02      0.03       0.18 r
+  adder_ff_output/n44 (net)                     3         0.05                0.00       0.18 r
+  adder_ff_output/U222/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.18 r
+  adder_ff_output/U222/X (SAEDRVT14_INV_S_20)                       0.01      0.02       0.19 f
+  adder_ff_output/n261 (net)                    5         0.04                0.00       0.19 f
+  adder_ff_output/U77/A1 (SAEDRVT14_NR2_MM_6)                       0.01      0.00       0.19 f
+  adder_ff_output/U77/X (SAEDRVT14_NR2_MM_6)                        0.02      0.02       0.21 r
+  adder_ff_output/n262 (net)                    1         0.01                0.00       0.21 r
+  adder_ff_output/U49/B (SAEDRVT14_AOI21_6)                         0.02      0.00       0.21 r
+  adder_ff_output/U49/X (SAEDRVT14_AOI21_6)                         0.04      0.02       0.23 f
+  adder_ff_output/n264 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U294/B (SAEDRVT14_OAI21_V1_8)                     0.04      0.00       0.23 f
+  adder_ff_output/U294/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N36 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_18_/D (SAEDRVT14_FDP_V2_1)          0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_18_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/full_reg_reg
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U105/A (SAEDRVT14_INV_6)                          0.00      0.00       0.15 f
+  adder_ff_output/U105/X (SAEDRVT14_INV_6)                          0.01      0.01       0.16 r
+  adder_ff_output/n239 (net)                    2         0.02                0.00       0.16 r
+  adder_ff_output/U177/A2 (SAEDRVT14_ND2_8)                         0.01      0.00       0.16 r
+  adder_ff_output/U177/X (SAEDRVT14_ND2_8)                          0.02      0.02       0.18 f
+  adder_ff_output/n242 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U159/A (SAEDRVT14_INV_6)                          0.02      0.00       0.18 f
+  adder_ff_output/U159/X (SAEDRVT14_INV_6)                          0.01      0.02       0.20 r
+  adder_ff_output/n40 (net)                     2         0.01                0.00       0.20 r
+  adder_ff_output/U136/A1 (SAEDRVT14_AN2_4)                         0.01      0.00       0.20 r
+  adder_ff_output/U136/X (SAEDRVT14_AN2_4)                          0.01      0.03       0.23 r
+  adder_ff_output/n240 (net)                    1         0.01                0.00       0.23 r
+  adder_ff_output/U187/A2 (SAEDRVT14_NR2_MM_6)                      0.01      0.00       0.23 r
+  adder_ff_output/U187/X (SAEDRVT14_NR2_MM_6)                       0.02      0.01       0.24 f
+  adder_ff_output/n241 (net)                    1         0.01                0.00       0.24 f
+  adder_ff_output/U287/B (SAEDRVT14_OAI21_V1_8)                     0.02      0.00       0.24 f
+  adder_ff_output/U287/X (SAEDRVT14_OAI21_V1_8)                     0.01      0.01       0.26 r
+  adder_ff_output/n37 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/full_reg_reg/D (SAEDRVT14_FDP_V2_4)               0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/full_reg_reg/CK (SAEDRVT14_FDP_V2_4)                        0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_16_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U165/A1 (SAEDRVT14_AN2_MM_20)                     0.00      0.00       0.15 r
+  adder_ff_output/U165/X (SAEDRVT14_AN2_MM_20)                      0.02      0.03       0.18 r
+  adder_ff_output/n44 (net)                     3         0.05                0.00       0.18 r
+  adder_ff_output/U168/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.18 r
+  adder_ff_output/U168/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.20 f
+  adder_ff_output/n47 (net)                     6         0.06                0.00       0.20 f
+  adder_ff_output/U72/A1 (SAEDRVT14_NR2_MM_8)                       0.02      0.00       0.20 f
+  adder_ff_output/U72/X (SAEDRVT14_NR2_MM_8)                        0.02      0.01       0.21 r
+  adder_ff_output/n254 (net)                    1         0.01                0.00       0.21 r
+  adder_ff_output/U43/B (SAEDRVT14_AOI21_6)                         0.02      0.00       0.21 r
+  adder_ff_output/U43/X (SAEDRVT14_AOI21_6)                         0.03      0.02       0.23 f
+  adder_ff_output/n255 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U293/B (SAEDRVT14_OAI21_V1_8)                     0.03      0.00       0.23 f
+  adder_ff_output/U293/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N38 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_16_/D (SAEDRVT14_FDP_V2LP_0P5)      0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_16_/CK (SAEDRVT14_FDP_V2LP_0P5)               0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U163/A1 (SAEDRVT14_ND2_MM_16)                     0.00      0.00       0.15 r
+  adder_ff_output/U163/X (SAEDRVT14_ND2_MM_16)                      0.01      0.01       0.16 f
+  adder_ff_output/n62 (net)                     2         0.02                0.00       0.16 f
+  adder_ff_output/U179/A2 (SAEDRVT14_ND2_16)                        0.01      0.00       0.16 f
+  adder_ff_output/U179/X (SAEDRVT14_ND2_16)                         0.01      0.01       0.17 r
+  adder_ff_output/n67 (net)                     1         0.01                0.00       0.17 r
+  adder_ff_output/U213/A (SAEDRVT14_INV_S_20)                       0.01      0.00       0.17 r
+  adder_ff_output/U213/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.19 f
+  adder_ff_output/n124 (net)                    4         0.06                0.00       0.19 f
+  adder_ff_output/U164/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.19 f
+  adder_ff_output/U164/X (SAEDRVT14_INV_S_20)                       0.02      0.02       0.21 r
+  adder_ff_output/n43 (net)                     6         0.06                0.00       0.21 r
+  adder_ff_output/U42/A1 (SAEDRVT14_AOI21_6)                        0.02      0.00       0.21 r
+  adder_ff_output/U42/X (SAEDRVT14_AOI21_6)                         0.04      0.02       0.23 f
+  adder_ff_output/n251 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U290/B (SAEDRVT14_OAI21_V1_8)                     0.04      0.00       0.24 f
+  adder_ff_output/U290/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N47 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_7_/D (SAEDRVT14_FDP_V2LP_2)         0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_7_/CK (SAEDRVT14_FDP_V2LP_2)                  0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U181/A1 (SAEDRVT14_ND2_MM_16)                     0.00      0.00       0.15 r
+  adder_ff_output/U181/X (SAEDRVT14_ND2_MM_16)                      0.02      0.01       0.16 f
+  adder_ff_output/n177 (net)                    3         0.03                0.00       0.16 f
+  adder_ff_output/U215/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.16 f
+  adder_ff_output/U215/X (SAEDRVT14_INV_S_20)                       0.01      0.02       0.18 r
+  adder_ff_output/n109 (net)                    3         0.04                0.00       0.18 r
+  adder_ff_output/U104/A (SAEDRVT14_INV_S_16)                       0.01      0.00       0.18 r
+  adder_ff_output/U104/X (SAEDRVT14_INV_S_16)                       0.02      0.02       0.20 f
+  adder_ff_output/n276 (net)                    6         0.06                0.00       0.20 f
+  adder_ff_output/U93/A1 (SAEDRVT14_NR2_MM_6)                       0.02      0.00       0.20 f
+  adder_ff_output/U93/X (SAEDRVT14_NR2_MM_6)                        0.02      0.02       0.22 r
+  adder_ff_output/n129 (net)                    1         0.01                0.00       0.22 r
+  adder_ff_output/U233/B (SAEDRVT14_AOI21_8)                        0.02      0.00       0.22 r
+  adder_ff_output/U233/X (SAEDRVT14_AOI21_8)                        0.03      0.02       0.24 f
+  adder_ff_output/n130 (net)                    1         0.01                0.00       0.24 f
+  adder_ff_output/U234/B (SAEDRVT14_OAI21_V1_8)                     0.03      0.00       0.24 f
+  adder_ff_output/U234/X (SAEDRVT14_OAI21_V1_8)                     0.01      0.02       0.26 r
+  adder_ff_output/N42 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_12_/D (SAEDRVT14_FDP_V2_1)          0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_12_/CK (SAEDRVT14_FDP_V2_1)                   0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_ma_put_operands
+              (input port clocked by CLK)
+  Endpoint: adder_ff_input/data1_reg_reg_17_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_ma_put_operands (in)                                           0.00      0.00       0.15 f
+  EN_ma_put_operands (net)                      6         0.07                0.00       0.15 f
+  adder_ff_input/ENQ (FIFO2_00000040_1)                                       0.00       0.15 f
+  adder_ff_input/ENQ (net)                                0.07                0.00       0.15 f
+  adder_ff_input/U214/A1 (SAEDRVT14_ND2_MM_16)                      0.00      0.00       0.15 f
+  adder_ff_input/U214/X (SAEDRVT14_ND2_MM_16)                       0.02      0.01       0.16 r
+  adder_ff_input/n167 (net)                     2         0.03                0.00       0.16 r
+  adder_ff_input/U148/A (SAEDRVT14_INV_S_20)                        0.02      0.00       0.16 r
+  adder_ff_input/U148/X (SAEDRVT14_INV_S_20)                        0.02      0.02       0.18 f
+  adder_ff_input/n95 (net)                      5         0.08                0.00       0.18 f
+  adder_ff_input/U130/A (SAEDRVT14_INV_S_16)                        0.02      0.00       0.19 f
+  adder_ff_input/U130/X (SAEDRVT14_INV_S_16)                        0.01      0.01       0.20 r
+  adder_ff_input/n98 (net)                      3         0.02                0.00       0.20 r
+  adder_ff_input/U86/A (SAEDRVT14_BUF_12)                           0.01      0.00       0.20 r
+  adder_ff_input/U86/X (SAEDRVT14_BUF_12)                           0.01      0.02       0.22 r
+  adder_ff_input/n70 (net)                      3         0.02                0.00       0.22 r
+  adder_ff_input/U36/A2 (SAEDRVT14_ND2_MM_4)                        0.01      0.00       0.22 r
+  adder_ff_input/U36/X (SAEDRVT14_ND2_MM_4)                         0.02      0.02       0.24 f
+  adder_ff_input/n215 (net)                     1         0.01                0.00       0.24 f
+  adder_ff_input/U271/B (SAEDRVT14_OAI21_V1_8)                      0.02      0.00       0.24 f
+  adder_ff_input/U271/X (SAEDRVT14_OAI21_V1_8)                      0.01      0.02       0.26 r
+  adder_ff_input/n18 (net)                      1         0.00                0.00       0.26 r
+  adder_ff_input/data1_reg_reg_17_/D (SAEDRVT14_FDP_V2_1)           0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_input/data1_reg_reg_17_/CK (SAEDRVT14_FDP_V2_1)                    0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_ma_put_operands
+              (input port clocked by CLK)
+  Endpoint: adder_ff_input/data1_reg_reg_29_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_ma_put_operands (in)                                           0.00      0.00       0.15 f
+  EN_ma_put_operands (net)                      6         0.07                0.00       0.15 f
+  adder_ff_input/ENQ (FIFO2_00000040_1)                                       0.00       0.15 f
+  adder_ff_input/ENQ (net)                                0.07                0.00       0.15 f
+  adder_ff_input/U214/A1 (SAEDRVT14_ND2_MM_16)                      0.00      0.00       0.15 f
+  adder_ff_input/U214/X (SAEDRVT14_ND2_MM_16)                       0.02      0.01       0.16 r
+  adder_ff_input/n167 (net)                     2         0.03                0.00       0.16 r
+  adder_ff_input/U148/A (SAEDRVT14_INV_S_20)                        0.02      0.00       0.16 r
+  adder_ff_input/U148/X (SAEDRVT14_INV_S_20)                        0.02      0.02       0.18 f
+  adder_ff_input/n95 (net)                      5         0.08                0.00       0.18 f
+  adder_ff_input/U133/A (SAEDRVT14_INV_S_16)                        0.02      0.00       0.19 f
+  adder_ff_input/U133/X (SAEDRVT14_INV_S_16)                        0.01      0.01       0.20 r
+  adder_ff_input/n99 (net)                      3         0.02                0.00       0.20 r
+  adder_ff_input/U84/A (SAEDRVT14_BUF_10)                           0.01      0.00       0.20 r
+  adder_ff_input/U84/X (SAEDRVT14_BUF_10)                           0.02      0.03       0.23 r
+  adder_ff_input/n74 (net)                      3         0.03                0.00       0.23 r
+  adder_ff_input/U28/A2 (SAEDRVT14_ND2_6)                           0.02      0.00       0.23 r
+  adder_ff_input/U28/X (SAEDRVT14_ND2_6)                            0.02      0.02       0.24 f
+  adder_ff_input/n245 (net)                     1         0.01                0.00       0.24 f
+  adder_ff_input/U304/B (SAEDRVT14_OAI21_V1_8)                      0.02      0.00       0.24 f
+  adder_ff_input/U304/X (SAEDRVT14_OAI21_V1_8)                      0.01      0.02       0.26 r
+  adder_ff_input/n30 (net)                      1         0.00                0.00       0.26 r
+  adder_ff_input/data1_reg_reg_29_/D (SAEDRVT14_FDP_V2LP_2)         0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_input/data1_reg_reg_29_/CK (SAEDRVT14_FDP_V2LP_2)                  0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_33_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U198/A (SAEDRVT14_INV_S_16)                       0.01      0.00       0.18 f
+  adder_ff_output/U198/X (SAEDRVT14_INV_S_16)                       0.01      0.02       0.19 r
+  adder_ff_output/n180 (net)                    3         0.04                0.00       0.19 r
+  adder_ff_output/U85/A (SAEDRVT14_INV_S_10)                        0.01      0.00       0.19 r
+  adder_ff_output/U85/X (SAEDRVT14_INV_S_10)                        0.02      0.02       0.22 f
+  adder_ff_output/n260 (net)                    5         0.04                0.00       0.22 f
+  adder_ff_output/U209/A1 (SAEDRVT14_OR2_4)                         0.02      0.00       0.22 f
+  adder_ff_output/U209/X (SAEDRVT14_OR2_4)                          0.01      0.03       0.24 f
+  adder_ff_output/n101 (net)                    1         0.01                0.00       0.24 f
+  adder_ff_output/U15/A2 (SAEDRVT14_ND2_CDC_4)                      0.01      0.00       0.24 f
+  adder_ff_output/U15/X (SAEDRVT14_ND2_CDC_4)                       0.02      0.01       0.26 r
+  adder_ff_output/N21 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_33_/D (SAEDRVT14_FDP_V2LP_2)        0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_33_/CK (SAEDRVT14_FDP_V2LP_2)                 0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_ma_put_operands
+              (input port clocked by CLK)
+  Endpoint: adder_ff_input/data1_reg_reg_58_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_ma_put_operands (in)                                           0.00      0.00       0.15 f
+  EN_ma_put_operands (net)                      6         0.07                0.00       0.15 f
+  adder_ff_input/ENQ (FIFO2_00000040_1)                                       0.00       0.15 f
+  adder_ff_input/ENQ (net)                                0.07                0.00       0.15 f
+  adder_ff_input/U214/A1 (SAEDRVT14_ND2_MM_16)                      0.00      0.00       0.15 f
+  adder_ff_input/U214/X (SAEDRVT14_ND2_MM_16)                       0.02      0.01       0.16 r
+  adder_ff_input/n167 (net)                     2         0.03                0.00       0.16 r
+  adder_ff_input/U148/A (SAEDRVT14_INV_S_20)                        0.02      0.00       0.16 r
+  adder_ff_input/U148/X (SAEDRVT14_INV_S_20)                        0.02      0.02       0.18 f
+  adder_ff_input/n95 (net)                      5         0.08                0.00       0.18 f
+  adder_ff_input/U130/A (SAEDRVT14_INV_S_16)                        0.02      0.00       0.19 f
+  adder_ff_input/U130/X (SAEDRVT14_INV_S_16)                        0.01      0.01       0.20 r
+  adder_ff_input/n98 (net)                      3         0.02                0.00       0.20 r
+  adder_ff_input/U83/A (SAEDRVT14_BUF_10)                           0.01      0.00       0.20 r
+  adder_ff_input/U83/X (SAEDRVT14_BUF_10)                           0.02      0.03       0.23 r
+  adder_ff_input/n71 (net)                      3         0.03                0.00       0.23 r
+  adder_ff_input/U29/A2 (SAEDRVT14_ND2_6)                           0.02      0.00       0.23 r
+  adder_ff_input/U29/X (SAEDRVT14_ND2_6)                            0.02      0.02       0.24 f
+  adder_ff_input/n321 (net)                     1         0.01                0.00       0.24 f
+  adder_ff_input/U388/B (SAEDRVT14_OAI21_V1_8)                      0.02      0.00       0.24 f
+  adder_ff_input/U388/X (SAEDRVT14_OAI21_V1_8)                      0.01      0.02       0.26 r
+  adder_ff_input/n59 (net)                      1         0.00                0.00       0.26 r
+  adder_ff_input/data1_reg_reg_58_/D (SAEDRVT14_FDP_V2LP_2)         0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_input/data1_reg_reg_58_/CK (SAEDRVT14_FDP_V2LP_2)                  0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U163/A1 (SAEDRVT14_ND2_MM_16)                     0.00      0.00       0.15 r
+  adder_ff_output/U163/X (SAEDRVT14_ND2_MM_16)                      0.01      0.01       0.16 f
+  adder_ff_output/n62 (net)                     2         0.02                0.00       0.16 f
+  adder_ff_output/U162/A2 (SAEDRVT14_AN2_MM_20)                     0.01      0.00       0.16 f
+  adder_ff_output/U162/X (SAEDRVT14_AN2_MM_20)                      0.02      0.03       0.19 f
+  adder_ff_output/n42 (net)                     5         0.05                0.00       0.19 f
+  adder_ff_output/U194/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.19 f
+  adder_ff_output/U194/X (SAEDRVT14_INV_S_20)                       0.01      0.02       0.21 r
+  adder_ff_output/n283 (net)                    5         0.04                0.00       0.21 r
+  adder_ff_output/U45/A1 (SAEDRVT14_AOI21_6)                        0.01      0.00       0.21 r
+  adder_ff_output/U45/X (SAEDRVT14_AOI21_6)                         0.04      0.02       0.23 f
+  adder_ff_output/n165 (net)                    1         0.01                0.00       0.23 f
+  adder_ff_output/U248/B (SAEDRVT14_OAI21_V1_8)                     0.04      0.00       0.23 f
+  adder_ff_output/U248/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N54 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_0_/D (SAEDRVT14_FDP_V2LP_2)         0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_0_/CK (SAEDRVT14_FDP_V2LP_2)                  0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 r
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 r
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 r
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 r
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 r
+  adder_ff_output/U165/A1 (SAEDRVT14_AN2_MM_20)                     0.00      0.00       0.15 r
+  adder_ff_output/U165/X (SAEDRVT14_AN2_MM_20)                      0.02      0.03       0.18 r
+  adder_ff_output/n44 (net)                     3         0.05                0.00       0.18 r
+  adder_ff_output/U222/A (SAEDRVT14_INV_S_20)                       0.02      0.00       0.18 r
+  adder_ff_output/U222/X (SAEDRVT14_INV_S_20)                       0.01      0.02       0.19 f
+  adder_ff_output/n261 (net)                    5         0.04                0.00       0.19 f
+  adder_ff_output/U260/A1 (SAEDRVT14_NR2_MM_4)                      0.01      0.00       0.19 f
+  adder_ff_output/U260/X (SAEDRVT14_NR2_MM_4)                       0.03      0.02       0.22 r
+  adder_ff_output/n187 (net)                    1         0.01                0.00       0.22 r
+  adder_ff_output/U261/B (SAEDRVT14_AOI21_8)                        0.03      0.00       0.22 r
+  adder_ff_output/U261/X (SAEDRVT14_AOI21_8)                        0.02      0.02       0.24 f
+  adder_ff_output/n188 (net)                    1         0.01                0.00       0.24 f
+  adder_ff_output/U262/B (SAEDRVT14_OAI21_V1_8)                     0.02      0.00       0.24 f
+  adder_ff_output/U262/X (SAEDRVT14_OAI21_V1_8)                     0.02      0.02       0.26 r
+  adder_ff_output/N50 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_4_/D (SAEDRVT14_FDP_V2LP_2)         0.02      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_4_/CK (SAEDRVT14_FDP_V2LP_2)                  0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+  Startpoint: EN_mav_get_result
+              (input port clocked by CLK)
+  Endpoint: adder_ff_output/data0_reg_reg_27_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: i2f
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.15       0.15 f
+  EN_mav_get_result (in)                                            0.00      0.00       0.15 f
+  EN_mav_get_result (net)                       5         0.06                0.00       0.15 f
+  adder_ff_output/DEQ (FIFO2_00000024_1)                                      0.00       0.15 f
+  adder_ff_output/DEQ (net)                               0.06                0.00       0.15 f
+  adder_ff_output/U108/A1 (SAEDRVT14_NR2_MM_10)                     0.00      0.00       0.15 f
+  adder_ff_output/U108/X (SAEDRVT14_NR2_MM_10)                      0.01      0.01       0.16 r
+  adder_ff_output/n103 (net)                    1         0.01                0.00       0.16 r
+  adder_ff_output/U212/A1 (SAEDRVT14_NR2_MM_16)                     0.01      0.00       0.16 r
+  adder_ff_output/U212/X (SAEDRVT14_NR2_MM_16)                      0.01      0.01       0.18 f
+  adder_ff_output/n123 (net)                    2         0.02                0.00       0.18 f
+  adder_ff_output/U161/A (SAEDRVT14_INV_12)                         0.01      0.00       0.18 f
+  adder_ff_output/U161/X (SAEDRVT14_INV_12)                         0.01      0.02       0.19 r
+  adder_ff_output/n113 (net)                    3         0.03                0.00       0.19 r
+  adder_ff_output/U103/A (SAEDRVT14_INV_S_10)                       0.01      0.00       0.19 r
+  adder_ff_output/U103/X (SAEDRVT14_INV_S_10)                       0.02      0.02       0.21 f
+  adder_ff_output/n275 (net)                    5         0.04                0.00       0.21 f
+  adder_ff_output/U98/A1 (SAEDRVT14_NR2_MM_6)                       0.02      0.00       0.21 f
+  adder_ff_output/U98/X (SAEDRVT14_NR2_MM_6)                        0.02      0.02       0.23 r
+  adder_ff_output/n108 (net)                    1         0.01                0.00       0.23 r
+  adder_ff_output/U184/A1 (SAEDRVT14_NR2_MM_8)                      0.02      0.00       0.23 r
+  adder_ff_output/U184/X (SAEDRVT14_NR2_MM_8)                       0.01      0.02       0.25 f
+  adder_ff_output/n111 (net)                    1         0.01                0.00       0.25 f
+  adder_ff_output/U31/A1 (SAEDRVT14_ND2_CDC_4)                      0.01      0.00       0.25 f
+  adder_ff_output/U31/X (SAEDRVT14_ND2_CDC_4)                       0.01      0.01       0.26 r
+  adder_ff_output/N27 (net)                     1         0.00                0.00       0.26 r
+  adder_ff_output/data0_reg_reg_27_/D (SAEDRVT14_FDP_V2_0P5)        0.01      0.00       0.26 r
+  data arrival time                                                                      0.26
+
+  clock CLK (rise edge)                                                       0.28       0.28
+  clock network delay (ideal)                                                 0.00       0.28
+  adder_ff_output/data0_reg_reg_27_/CK (SAEDRVT14_FDP_V2_0P5)                 0.00       0.28 r
+  library setup time                                                         -0.02       0.26
+  data required time                                                                     0.26
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.26
+  data arrival time                                                                     -0.26
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1

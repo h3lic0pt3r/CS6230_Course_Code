@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sat Sep 19 04:53:13 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               4
+    Connected to power or ground (LINT-32)                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'mkDUT', a pin on submodule 'adder_ff_input' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkDUT', a pin on submodule 'adder_ff_output' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkDUT', a pin on submodule 'adder_ff_s1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkDUT', a pin on submodule 'adder_ff_s2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+1

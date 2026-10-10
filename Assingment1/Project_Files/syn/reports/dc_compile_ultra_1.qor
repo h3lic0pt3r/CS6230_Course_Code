@@ -1,0 +1,111 @@
+Warning: Design 'mkDUT' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : mkDUT
+Version: U-2022.12
+Date   : Sat Sep 19 01:17:44 2026
+****************************************
+
+
+  Timing Path Group 'f2f'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.25
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      0.28
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'f2o'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.10
+  Critical Path Slack:           0.03
+  Critical Path Clk Period:      0.28
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'i2f'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.11
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      0.28
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:        214
+  Leaf Cell Count:               1873
+  Buf/Inv Cell Count:             402
+  Buf Cell Count:                  49
+  Inv Cell Count:                 353
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1669
+  Sequential Cell Count:          204
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      854.788787
+  Noncombinational Area:   195.670797
+  Buf/Inv Area:            147.851998
+  Total Buffer Area:            46.09
+  Total Inverter Area:         101.76
+  Macro/Black Box Area:      0.000000
+  Net Area:               1172.162620
+  -----------------------------------
+  Cell Area:              1050.459584
+  Design Area:            2222.622204
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2215
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: varaha-eda.cs.iitm.ac.in
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.54
+  Logic Optimization:                  8.89
+  Mapping Optimization:               28.12
+  -----------------------------------------
+  Overall Compile Time:               68.48
+  Overall Compile Wall Clock Time:    70.46
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

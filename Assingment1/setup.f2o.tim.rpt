@@ -1,0 +1,700 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group f2o
+        -max_paths 20
+        -transition_time
+        -capacitance
+Design : mkDUT
+Version: U-2022.12
+Date   : Sat Sep 19 04:55:45 2026
+****************************************
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+  Startpoint: adder_ff_input/full_reg_reg
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: RDY_ma_put_operands
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_input/full_reg_reg/CK (SAEDRVT14_FDP_V2_1)               0.00      0.00       0.00 r
+  adder_ff_input/full_reg_reg/Q (SAEDRVT14_FDP_V2_1)                0.08      0.11       0.11 r
+  adder_ff_input/FULL_N (net)                   3         0.02                0.00       0.11 r
+  adder_ff_input/FULL_N (FIFO2_00000040_1)                                    0.00       0.11 r
+  RDY_ma_put_operands (net)                               0.02                0.00       0.11 r
+  RDY_ma_put_operands (out)                                         0.08      0.00       0.11 r
+  data arrival time                                                                      0.11
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.11
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.40
+
+
+  Startpoint: adder_ff_output/empty_reg_reg
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: RDY_mav_get_result
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/empty_reg_reg/CK (SAEDRVT14_FDP_V2_1)             0.00      0.00       0.00 r
+  adder_ff_output/empty_reg_reg/Q (SAEDRVT14_FDP_V2_1)              0.08      0.11       0.11 r
+  adder_ff_output/EMPTY_N (net)                 3         0.02                0.00       0.11 r
+  adder_ff_output/EMPTY_N (FIFO2_00000024_1)                                  0.00       0.11 r
+  RDY_mav_get_result (net)                                0.02                0.00       0.11 r
+  RDY_mav_get_result (out)                                          0.08      0.00       0.11 r
+  data arrival time                                                                      0.11
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.11
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.40
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_25_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[25]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_25_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_25_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[25] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[25] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[25] (net)                                0.00                0.00       0.09 f
+  mav_get_result[25] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_24_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[24]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_24_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_24_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[24] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[24] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[24] (net)                                0.00                0.00       0.09 f
+  mav_get_result[24] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_23_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[23]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_23_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_23_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[23] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[23] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[23] (net)                                0.00                0.00       0.09 f
+  mav_get_result[23] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_22_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[22]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_22_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_22_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[22] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[22] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[22] (net)                                0.00                0.00       0.09 f
+  mav_get_result[22] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_19_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[19]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_19_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_19_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[19] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[19] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[19] (net)                                0.00                0.00       0.09 f
+  mav_get_result[19] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_18_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[18]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_18_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_18_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[18] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[18] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[18] (net)                                0.00                0.00       0.09 f
+  mav_get_result[18] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_17_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[17]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_17_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_17_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[17] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[17] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[17] (net)                                0.00                0.00       0.09 f
+  mav_get_result[17] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_16_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[16]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_16_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_16_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[16] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[16] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[16] (net)                                0.00                0.00       0.09 f
+  mav_get_result[16] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_15_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[15]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_15_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_15_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[15] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[15] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[15] (net)                                0.00                0.00       0.09 f
+  mav_get_result[15] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_13_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[13]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_13_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_13_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[13] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[13] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[13] (net)                                0.00                0.00       0.09 f
+  mav_get_result[13] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_12_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[12]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_12_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_12_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[12] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[12] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[12] (net)                                0.00                0.00       0.09 f
+  mav_get_result[12] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[11]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_11_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_11_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[11] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[11] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[11] (net)                                0.00                0.00       0.09 f
+  mav_get_result[11] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_10_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[10]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_10_/CK (SAEDRVT14_FDP_V2LP_0P5)     0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_10_/Q (SAEDRVT14_FDP_V2LP_0P5)      0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[10] (net)               1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[10] (FIFO2_00000024_1)                                0.00       0.09 f
+  mav_get_result[10] (net)                                0.00                0.00       0.09 f
+  mav_get_result[10] (out)                                          0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[9]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_9_/CK (SAEDRVT14_FDP_V2LP_0P5)      0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_9_/Q (SAEDRVT14_FDP_V2LP_0P5)       0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[9] (net)                1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[9] (FIFO2_00000024_1)                                 0.00       0.09 f
+  mav_get_result[9] (net)                                 0.00                0.00       0.09 f
+  mav_get_result[9] (out)                                           0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_8_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[8]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_8_/CK (SAEDRVT14_FDP_V2LP_0P5)      0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_8_/Q (SAEDRVT14_FDP_V2LP_0P5)       0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[8] (net)                1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[8] (FIFO2_00000024_1)                                 0.00       0.09 f
+  mav_get_result[8] (net)                                 0.00                0.00       0.09 f
+  mav_get_result[8] (out)                                           0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[7]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_7_/CK (SAEDRVT14_FDP_V2LP_0P5)      0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_7_/Q (SAEDRVT14_FDP_V2LP_0P5)       0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[7] (net)                1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[7] (FIFO2_00000024_1)                                 0.00       0.09 f
+  mav_get_result[7] (net)                                 0.00                0.00       0.09 f
+  mav_get_result[7] (out)                                           0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[5]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_5_/CK (SAEDRVT14_FDP_V2LP_0P5)      0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_5_/Q (SAEDRVT14_FDP_V2LP_0P5)       0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[5] (net)                1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[5] (FIFO2_00000024_1)                                 0.00       0.09 f
+  mav_get_result[5] (net)                                 0.00                0.00       0.09 f
+  mav_get_result[5] (out)                                           0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+  Startpoint: adder_ff_output/data0_reg_reg_4_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mav_get_result[4]
+            (output port clocked by CLK)
+  Path Group: f2o
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mkDUT              8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  adder_ff_output/data0_reg_reg_4_/CK (SAEDRVT14_FDP_V2LP_0P5)      0.00      0.00       0.00 r
+  adder_ff_output/data0_reg_reg_4_/Q (SAEDRVT14_FDP_V2LP_0P5)       0.04      0.09       0.09 f
+  adder_ff_output/D_OUT[4] (net)                1         0.00                0.00       0.09 f
+  adder_ff_output/D_OUT[4] (FIFO2_00000024_1)                                 0.00       0.09 f
+  mav_get_result[4] (net)                                 0.00                0.00       0.09 f
+  mav_get_result[4] (out)                                           0.04      0.00       0.09 f
+  data arrival time                                                                      0.09
+
+  clock CLK (rise edge)                                                       0.66       0.66
+  clock network delay (ideal)                                                 0.00       0.66
+  output external delay                                                      -0.15       0.51
+  data required time                                                                     0.51
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.51
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.42
+
+
+1
